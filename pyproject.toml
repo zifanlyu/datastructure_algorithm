@@ -1,0 +1,20 @@
+[project]
+name = "datastructure-algorithm"
+version = "0.1.0"
+description = "Interview practice: LeetCode, probability and statistics, ML from scratch"
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb",
+    "numpy",
+    "pandas",
+    "scipy",
+    "sortedcontainers",
+    "statsmodels",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "-q"
